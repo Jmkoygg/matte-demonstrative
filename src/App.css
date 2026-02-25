@@ -146,6 +146,10 @@ section {
 }
 
 /* --- Dashboard Mockup Simulation --- */
+.absolute { position: absolute !important; }
+.bg-darker { background: var(--bg-color) !important; }
+.bg-dark { background: var(--surface-color) !important; }
+
 .db-mockup {
   display: flex;
   flex-direction: column;
@@ -441,11 +445,18 @@ section {
 
 /* --- Responsive Layout Adjustments --- */
 @media (max-width: 1024px) {
+  .hero-section { padding-top: 140px; }
   .hero-grid, .founder-grid, .editorial-grid { grid-template-columns: 1fr; gap: 64px; }
   .ed-col.right { padding-top: 0; }
   .bento-grid { grid-template-columns: 1fr 1fr; }
   .footer-top { grid-template-columns: 1fr; }
-  .hero-mockup-wrapper { position: relative; width: 100%; transform: none; top: 0; left: 0; }
+  .hero-mockup-wrapper, .hero-mockup-wrapper:hover { 
+    position: relative; 
+    width: 100%; 
+    transform: none !important; 
+    top: 0; left: 0; 
+  }
+  .hero-visual { height: auto; min-height: 450px; }
 }
 
 @media (max-width: 768px) {
