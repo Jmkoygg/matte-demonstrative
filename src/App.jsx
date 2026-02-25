@@ -256,7 +256,7 @@ const FounderSection = () => (
       <div className="founder-grid">
         <div className="founder-photo-area reveal">
            <div className="founder-frame">
-             <img src="/image.png?v=2" alt="Pedro Soares" loading="lazy" className="founder-img" />
+             <img src="/image.png" alt="Pedro Soares" loading="lazy" className="founder-img" />
            </div>
            <div className="glow-orb magenta" style={{top: '50%', right: '-20%'}}></div>
         </div>
